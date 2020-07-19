@@ -1,4 +1,4 @@
-name: signup
+name: auto_build
 
 on:
     push:
