@@ -4,6 +4,7 @@ on:
     push:
         branches:
             - master
+    fork
 jobs:
     build_job:
         name: auto_build_job
