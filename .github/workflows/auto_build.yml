@@ -21,7 +21,7 @@ jobs:
                 tar -zxvf  asio-1.16.1.tar.gz
                 cd asio-1.16.1
                 ./configure
-                make
+                make -j$(nproc)
             - name: pack-executable
               run: |
                 tar zcvf cpp11.tar.gz asio-1.16.1/src/examples/cpp11
